@@ -12,8 +12,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-
-
 <!-- STYLE SHEETS -->
 <link href="css/normalize.css" rel="stylesheet">
 <!-- phone-default -->
@@ -22,34 +20,47 @@
 <link href="css/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
 <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i" rel="stylesheet" type="text/css">
 
 
      
 </head>
 <body>
 <!-- HEADER HERE -->
-	<header>
+	<header class=".clearfix">
+        <figure class="logo">
+            <img src="images/logo.jpg" alt="logo" srcset=""> <!--"images/logo1.png 1x, images/logo2.png s2" used for 1x or 2x pixel density-->
+        </figure>
  <h1>Company Name Here</h1>
         <h2>Possible Slogan or Tagline</h2>
     </header>
-    
+
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
+        <button onclick="toggleMenu()">&#9776</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Products</a></li>
             <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Home2</a></li>
+            <li><a href="#">Products2</a></li>
+            <li><a href="#">Location2</a></li>
+            <li><a href="#">Contact2</a></li>
         </ul>
     </nav>
     
     
 <!-- CONTENT HERE -->
-    <main>
+    <main class="clearfix">
         <h1>Products</h1>
         <figure class="myphoto">
-        <img src="images/img1.jpg">
+        <img src="images/img1.jpg" alt="image thingy" sizes="50vw"
+             srcset="images/img2.jpg 200w,
+              images/img5.jpg 500w,
+               images/img8.jpg 800w,
+                images/img11.jpg 1100w"><!--  img changes based on width of 50% of screen-->
             <figcaption> max img size </figcaption>
         </figure>
         <p>Lorem ipsum dolor sit amet, ne graeco utroque conceptam nec, primis voluptatibus id his, latine dolorum no eos. Vim cu nominavi quaerendum complectitur, dico choro eu eum, vel iracundia hendrerit ut. Vim atqui dissentiunt te, at vidit sententiae duo. Eu est noluisse vituperata temporibus. An nec velit aeterno, ei vix fugit semper atomorum. Ad sea semper fierent.
@@ -58,12 +69,57 @@
 
         Cu vis quaeque recteque. Ceteros explicari nec et, ad sea iracundia expetendis appellantur, augue audiam epicuri ut sea. Ut sea meis scripta disputationi, et toll</p>
 
+
+        <br>
+        <br>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="256-123-4567"></label>
+                <label class="top">E-mail* <input type="email" name="email" required placeholder="Dude@someone.com"></label>
+                <label class="top">URL <input type="url" name="url" placeholder="http://mysite.com"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Info</legend>
+                <div>Audience</div>
+                <!-- name has to be the same or else they will not act exclusive -->
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option> <!-- special char is for safari/chrome style being overridden in CSS with -webkit-appearance -->
+                        <option value="software">Software Dev</option>
+                        <option value="creative">Creative Pro</option>
+                        <option value="info">Info Tech</option>
+                        <option value="data">Data Pro</option>
+                        <option value="mfg">Manufacturing</option>
+                    </select>
+                </label>
+                <label class="top">How many authors <input type="number" name="authors"></label>
+            </fieldset>
+            <input type="submit" value="Propose Course" class="submitButton">
+        </form>
     </main>
     
 <!-- FOOTER HERE -->   
     <footer>
         &copy; 201x &bull; Paul Cheney &bull; 123-555-6789
     </footer>
+
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

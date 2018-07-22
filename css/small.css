@@ -2,13 +2,13 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {-webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Titillium Web', Verdana, sans-serif;
 }
 
 
@@ -19,26 +19,36 @@ header {
 }
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
+header figure.logo {float: left; margin: 0 2% 0 0;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: #ccc;
+    font-family: 'Titillium Web', sans-serif;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-nav ul li {
+/* nav ul li {
     float: left;
     width: 25%;
-}
+} */
 nav ul li a {
-    display: block;
+    display: block;  /* to make the full width clickable */
     background-color: #444;
-    color: #eee;
+    color: #000;
     border-left: 1px solid #777;
-    padding: .5rem 0;
+    border-top: 1px solid rgba(0,0,0,.3);
+    padding: .8rem 2%;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
@@ -46,22 +56,78 @@ nav ul li a {
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
+    background-color: rgba(0,0,0,0.4);
     color: #333;
 }
-nav ul li.active a {
-    background-color: #000;
+nav ul li.active a {                 /* if this were above hover then hover would override this style */
+    background-color: rgba(0,0,0,.3);
     color: #fff;
 }
+
+nav ul.hide {display: none;}
+
 /*----------- MAIN --------------*/
 main {
     padding: 0;
     min-height: 10rem;
+    margin-left: 2%;
 }
 main figure.myphoto {width: 50%; margin: 0 0 0 2%; float: right;}
-main figure.myphoto img {width: 50%;}
+main figure.myphoto img {width: 100%;}
 main figure.myphoto figcaption {text-align: center; font-size: .75rem; margin-bottom: 2px;}
 
+
+/*----------- FORM --------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 8px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .7rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,.1);
+}
+form label.sbs {
+    display: block;
+    padding: .7rem 0;
+    color: #555;
+}
+form input.submitButton {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 2rem;
+    padding: .7rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
 
 /*----------- FOOTER --------------*/
 footer {

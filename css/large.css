@@ -3,7 +3,7 @@
 
     header, nav, main, footer {
         max-width: 64rem;
-        margin:auto;
+        margin: auto;
     }
 
 /*----------- BODY --------------*/
@@ -14,12 +14,27 @@
 
 
 
-/*----------- NAVIGATION --------------*/
+/*----------- NAVIGATION --------------*/  /* this was in medium! */
+    nav { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e5e5e5+100 */
+        background: #000000; /* Old browsers */
+        background: linear-gradient(to bottom, #000000 0%, #e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+    nav button {display: none;}
+    nav ul {margin-left: 2%;}
+    nav ul li {float: left; width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a {border: none;
+        border-right: 1px solid rgba(0,0,0,.3);
+        padding: .6rem 1rem;}
+    nav ul.hide {display: block;} /* show even though class is hide for small */
 
 
 
 /*----------- MAIN --------------*/
-
+form label.sbs {
+    padding: .4rem 0;
+}
 
 
 /*----------- FOOTER --------------*/
