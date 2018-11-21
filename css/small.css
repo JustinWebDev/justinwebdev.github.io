@@ -4,13 +4,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * {-webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
     font-family: 'Titillium Web', Verdana, sans-serif;
 }
-
 
 /*----------- HEADER --------------*/
 header {
@@ -44,7 +42,7 @@ nav ul {
 } */
 nav ul li a {
     display: block;  /* to make the full width clickable */
-    background-color: #444;
+    background: linear-gradient(to bottom, #e5e5e5 0%, #000000 100%);/*#444;*/
     color: #000;
     border-left: 1px solid #777;
     border-top: 1px solid rgba(0,0,0,.3);
