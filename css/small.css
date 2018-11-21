@@ -42,7 +42,7 @@ nav ul {
 } */
 nav ul li a {
     display: block;  /* to make the full width clickable */
-    background: linear-gradient(to bottom, #e5e5e5 0%, #000000 100%);/*#444;*/
+    background-color: #6f6f6f;
     color: #000;
     border-left: 1px solid #777;
     border-top: 1px solid rgba(0,0,0,.3);
