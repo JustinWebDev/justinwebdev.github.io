@@ -14,7 +14,7 @@ header {
 }
 /*----------- NAVIGATION --------------*/  /* this was in medium! */
     nav { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e5e5e5+100 */
-        background: #000000; /* Old browsers */
+        /*background: #000000;*/ /* Old browsers */
         background: linear-gradient(to bottom, #e5e5e5 0%, #5b5b5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
     nav button {display: none;}
@@ -22,10 +22,13 @@ header {
     nav ul li {float: left; width: auto;}
     nav ul li:first-child a {border-left: 1px solid #777;}
     nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a {border: none;
+    nav ul li a {/*border: 1px solid rgba(0,0,0,0.8);*/
         background: linear-gradient(to bottom, #e5e5e5 0%, #5b5b5b 100%);
         border-right: 1px solid rgba(0,0,0,.3);
         padding: .6rem 1rem;}
+    nav ul li a:hover {
+        box-shadow: 0 0 12px inset;
+    }
     nav ul li.active a {
         background: linear-gradient(to bottom, #5b5b5b 0%, #FFFFFF 100%);
     }
