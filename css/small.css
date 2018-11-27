@@ -93,9 +93,27 @@ form label.top, form div {
     color: #9c2c13;
     font-size: .8rem;
 }
+form label.side {
+    /*display: block;*/
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
 form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .7rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,.1);
+}
+form label.side input, form label.side select {
+    -webkit-appearance: none;
+    /*display: block;*/
     font-size: 1rem;
     border: solid 1px #999;
     border-radius: 4px;
@@ -120,10 +138,10 @@ form input.submitButton {
     width: 96%;
     max-width: 20rem;
 }
-form label.top input:required {
+form label.top input:required, form label.side input:required {
     border-left: red solid 6px;
 }
-form label.top input:required:valid {
+form label.top input:required:valid, form label.side input:required:valid {
     border-left: green solid 6px;
 }
 
@@ -133,8 +151,6 @@ footer {
     padding: .5rem 2%;
     text-align: center;
 }
-
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
