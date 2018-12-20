@@ -14,10 +14,13 @@ body {
 header {
     padding: .5rem 2%;
     background-color: #ddd;
+    border-top-left-radius: .75em;
+    border-top-right-radius: .75em;
 }
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 header figure.logo {float: left; margin: 0 2% 0 0;}
+header figure.logo img {border-radius: .3em;}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -71,7 +74,7 @@ main {
 /*    margin-left: 2%;*/
 }
 main figure.myphoto {width: 50%; margin: 0 0 0 2%; float: right;}
-main figure.myphoto img {width: 100%; border-radius: 5%;}
+main figure.myphoto img {width: 100%; border-radius: 6%/90%;}
 main figure.myphoto figcaption {text-align: center; font-size: .75rem; margin-bottom: 2px;}
 
 
@@ -94,7 +97,7 @@ form label.top, form div {
     font-size: .8rem;
 }
 form label.side {
-    /*display: block;*/
+    display: inline;
     padding-top: 1rem;
     color: #9c2c13;
     font-size: .8rem;
@@ -113,11 +116,12 @@ form label.top input, form label.top select {
 }
 form label.side input, form label.side select {
     -webkit-appearance: none;
-    /*display: block;*/
+    display: inline;
     font-size: 1rem;
     border: solid 1px #999;
     border-radius: 4px;
-    padding: .7rem;
+    padding: .75rem;
+    margin-top: 1rem;
     color: #555;
     width: 100%;
     max-width: 20rem;
@@ -150,6 +154,8 @@ footer {
     background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
+    border-bottom-left-radius: .75em;
+    border-bottom-right-radius: .75em;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

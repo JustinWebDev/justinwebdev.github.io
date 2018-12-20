@@ -10,12 +10,12 @@
 
 /*----------- HEADER --------------*/
 header {
-    background: linear-gradient(to bottom, #5b5b5b 0%, #e5e5e5 100%);
+    background: linear-gradient(to bottom, #606060 0%, #e5e5e5 95%);
 }
 /*----------- NAVIGATION --------------*/  /* this was in medium! */
     nav { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e5e5e5+100 */
         /*background: #000000;*/ /* Old browsers */
-        background: linear-gradient(to bottom, #e5e5e5 0%, #5b5b5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to bottom, #e5e5e5 0%, #606060 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
     nav button {display: none;}
     nav ul {margin-left: 2%;}
@@ -30,13 +30,13 @@ header {
         box-shadow: 0 0 12px inset;
     }
     nav ul li.active a {
-        background: linear-gradient(to bottom, #5b5b5b 0%, #FFFFFF 100%);
+        background: linear-gradient(to bottom, #5b5b5b 0%, #E2E2E2 100%);
     }
     nav ul.hide {display: block;} /* show even though class is hide for small */
 
 /*----------- MAIN --------------*/
     main {
-        padding: 0;
+        padding: 0 2%;
         min-height: 10rem;
     }
 form label.sbs {
