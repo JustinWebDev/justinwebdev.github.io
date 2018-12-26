@@ -6,9 +6,11 @@
 /*----------- HEADER --------------*/
 
 /*----------- NAVIGATION --------------*/
+    nav button {display: none;}
     nav ul li {float: left; width: 25%;}
+}
 /*----------- MAIN --------------*/
 
 /*----------- FOOTER --------------*/
     
-} /* end of media query */
+/* end of media query */
