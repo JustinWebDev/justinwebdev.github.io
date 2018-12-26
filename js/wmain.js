@@ -29,12 +29,14 @@ weatherConditions.onload = function() {
         console.log(wCond);
         document.getElementById('location').innerHTML = wCond.name;
         var iconcode = wCond.weather[0].icon;
+        console.log("'GOT icon ='+iconcode");
         var iconpath = "https://openweathermap.org/img/w/"+iconcode+".png";
+        console.log(iconpath);
         document.getElementById('wcicon').src = iconpath;
         //document.getElementById('wcicon').innerHTML = "<img src=\"https://openweathermap.org/img/w/"+wCond.weather[0].icon+".png\">";
-// https://openweathermap.org/weather-conditions  <img src="http://openweathermap.org/img/w/10d.png">
+// https://openweathermap.org/weather-conditions  <img src="https://openweathermap.org/img/w/10d.png">
         var weatherCond = "";
-        var i = 0;
+        //var i = 0;
           for (var i=0; i < wCond.weather.length; i++){
             weatherCond += wCond.weather[i].main;
             if (i != wCond.weather.length-1){
@@ -44,14 +46,14 @@ weatherConditions.onload = function() {
       document.getElementById('temperature').innerHTML = Math.round(wCond.main.temp);
       document.getElementById('windspeed').innerHTML = wCond.wind.speed;
       var weatherDesc = "";
-      var i = 0;
+      //var i = 0;
         for (var i=0; i < wCond.weather.length; i++){
           weatherDesc += wCond.weather[i].description;
           if (i != wCond.weather.length-1){
             weatherDesc += ", ";}
           }
       document.getElementById('desc').innerHTML = weatherDesc;
-      document.getElementById('radar').src = 'https://tile.openweathermap.org/map/precipitation_new/4/6/10.png?appid=8c6405207db6b6fe115ac161f770cd31' // for radar div
+      //document.getElementById('radar').src = 'https://tile.openweathermap.org/map/precipitation_new/4/6/10.png?appid=8c6405207db6b6fe115ac161f770cd31' // for radar div
     } //end if
 }; //end function
 
@@ -73,7 +75,7 @@ if (weatherForecast.status === 200){
   var day1 = weekday1[d1.getDay()];
   document.getElementById('r1c1').innerHTML = day1;
   document.getElementById('r1c3').innerHTML = Math.round(fObj.list[0].main.temp)+"&deg;";
-  document.getElementById('r1c2').src = "http://openweathermap.org/img/w/"+fObj.list[0].weather[0].icon+".png";
+  document.getElementById('r1c2').src = "https://openweathermap.org/img/w/"+fObj.list[0].weather[0].icon+".png";
 
   // day 2
   var d2 = new Date();
@@ -88,7 +90,7 @@ if (weatherForecast.status === 200){
   var day2 = weekday2[d2.getDay()+1];
   document.getElementById('r2c1').innerHTML = day2;
   document.getElementById('r2c3').innerHTML = Math.round(fObj.list[8].main.temp)+"&deg;";
-  document.getElementById('r2c2').src = "http://openweathermap.org/img/w/"+fObj.list[8].weather[0].icon+".png";
+  document.getElementById('r2c2').src = "https://openweathermap.org/img/w/"+fObj.list[8].weather[0].icon+".png";
 
   // day 3
   var d3 = new Date();
@@ -103,7 +105,7 @@ if (weatherForecast.status === 200){
   var day3 = weekday3[d3.getDay()+2]; console.log(day3);
   document.getElementById('r3c1').innerHTML = day3;
   document.getElementById('r3c3').innerHTML = Math.round(fObj.list[16].main.temp)+"&deg;";
-  document.getElementById('r3c2').src = "http://openweathermap.org/img/w/"+fObj.list[16].weather[0].icon+".png";
+  document.getElementById('r3c2').src = "https://openweathermap.org/img/w/"+fObj.list[16].weather[0].icon+".png";
 
  } //end if
 }; //end function
