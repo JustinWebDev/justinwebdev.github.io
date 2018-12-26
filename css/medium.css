@@ -1,17 +1,23 @@
 /* 35em is also 560px (if basefont is 16px) */
 @media only screen and (min-width: 35rem) {
 
-/*----------- BODY --------------*/
+    /*----------- BODY --------------*/
+    /*----------- HEADER --------------*/
+    /*----------- NAVIGATION --------------*/
+    nav button {
+        display: none;
+    }
 
-/*----------- HEADER --------------*/
+    nav ul.hide {
+        display: block;
+    }
 
-/*----------- NAVIGATION --------------*/
-    nav button {display: none;}
-    nav ul.hide {display: block;}
-    nav ul li {float: left; width: 25%;}
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
+
+    /*----------- MAIN --------------*/
+    /*----------- FOOTER --------------*/
 }
-/*----------- MAIN --------------*/
-
-/*----------- FOOTER --------------*/
-    
 /* end of media query */
