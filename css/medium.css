@@ -7,6 +7,7 @@
 
 /*----------- NAVIGATION --------------*/
     nav button {display: none;}
+    nav ul.hide {display: block;}
     nav ul li {float: left; width: 25%;}
 }
 /*----------- MAIN --------------*/
