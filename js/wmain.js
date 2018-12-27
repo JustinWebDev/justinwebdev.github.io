@@ -29,7 +29,7 @@ weatherConditions.onload = function() {
         console.log(wCond);
         document.getElementById('location').innerHTML = wCond.name;
         var iconcode = wCond.weather[0].icon;
-        console.log("'GOT icon ='+iconcode");
+        console.log("GOT icon = "+ iconcode);
         var iconpath = "https://openweathermap.org/img/w/"+iconcode+".png";
         console.log(iconpath);
         document.getElementById('wcicon').src = iconpath;
