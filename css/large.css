@@ -23,14 +23,18 @@ header {
     nav ul li:first-child a {border-left: 1px solid #777;}
     nav ul li:last-child a {border-right: 1px solid #777;}
     nav ul li a {/*border: 1px solid rgba(0,0,0,0.8);*/
-        background: linear-gradient(to bottom, #e5e5e5 0%, #5b5b5b 100%);
+        background: linear-gradient(to bottom right, #e5e5e5 0%, #5b5b5b 100%);
         border-right: 1px solid rgba(0,0,0,.3);
+        border-top-right-radius: 8px;
         padding: .6rem 1rem;}
     nav ul li a:hover {
         box-shadow: 0 0 12px inset;
     }
     nav ul li.active a {
         background: linear-gradient(to bottom, #5b5b5b 0%, #E2E2E2 100%);
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
     }
     nav ul.hide {display: block;} /* show even though class is hide for small */
 
@@ -38,6 +42,13 @@ header {
     main {
         padding: 0 2%;
         min-height: 10rem;
+        /*border: solid #5b5b5b 2px;*/
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, #5b5b5b, #dddddd) 1 100%;
+        /*border-left: solid #5b5b5b 2px;
+        border-right: solid #5b5b5b 2px;
+        */
     }
 form label.sbs {
     padding: .4rem 0;
