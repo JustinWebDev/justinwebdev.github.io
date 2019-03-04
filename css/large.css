@@ -45,7 +45,7 @@ header {
         /*border: solid #5b5b5b 2px;*/
         border-width: 2px;
         border-style: solid;
-        border-image: linear-gradient(to bottom, #5b5b5b, #dddddd) 1 100%;
+        border-image: linear-gradient(to bottom, #5b5b5b, #dddddd) 2 100%;
         /*border-left: solid #5b5b5b 2px;
         border-right: solid #5b5b5b 2px;
         */
