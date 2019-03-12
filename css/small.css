@@ -46,7 +46,7 @@ nav ul {
 } */
 nav ul li a {
     display: block;  /* to make the full width clickable */
-    background-color: #6f6f6f;
+    background-color: #8f8e8e;/*#6f6f6f;*/
     color: #000;
     border-left: 1px solid #777;
     border-top: 1px solid rgba(0,0,0,.3);
@@ -64,6 +64,7 @@ nav ul li a:hover {
 nav ul li.active a {                 /* if this were above hover then hover would override this style */
     background-color: rgba(0,0,0,.3);
     color: #fff;
+    box-shadow: 0 0 16px 0 #5a5a5a inset;
 }
 
 nav ul.hide {display: none;}
