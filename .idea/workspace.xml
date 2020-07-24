@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1ed9568-2b33-42e1-a8d3-1847b3afb36e" name="Default" comment="small nav tuning, content updates">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b1ed9568-2b33-42e1-a8d3-1847b3afb36e" name="Default" comment="content updates">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1583016374372" duration="111000" />
       <workItem from="1595551448862" duration="99000" />
       <workItem from="1595551623635" duration="340000" />
-      <workItem from="1595552179509" duration="1650000" />
+      <workItem from="1595552179509" duration="1832000" />
     </task>
     <task id="LOCAL-00001" summary="nav css fix">
       <created>1542831187176</created>
@@ -335,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563933503891</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="content updates">
+      <created>1595553905899</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1595553905899</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,12 +362,17 @@
     <MESSAGE value="index content update" />
     <MESSAGE value="add border to large render, add content" />
     <MESSAGE value="small nav tuning, content updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="small nav tuning, content updates" />
+    <MESSAGE value="content updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="content updates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="216" y="220" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595551830896">
       <screen x="0" y="0" width="1073" height="970" />
     </state>
     <state x="216" y="220" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1073.970@0.0.1073.970" timestamp="1595551830896" />
+    <state x="533" y="60" key="CommitChangelistDialog2" timestamp="1595553904212">
+      <screen x="0" y="0" width="1824" height="986" />
+    </state>
+    <state x="533" y="60" key="CommitChangelistDialog2/0.0.1824.986@0.0.1824.986" timestamp="1595553904212" />
   </component>
 </project>
