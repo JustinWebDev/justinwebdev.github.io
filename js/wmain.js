@@ -37,7 +37,7 @@ weatherConditions.onload = function() {
 // https://openweathermap.org/weather-conditions  <img src="https://openweathermap.org/img/w/10d.png">
         var weatherCond = "";
         //var i = 0;
-          for (var i=0; i < wCond.weather.length; i++){
+          for (let i=0; i < wCond.weather.length; i++){
             weatherCond += wCond.weather[i].main;
             if (i != wCond.weather.length-1){
               weatherCond += ", ";}
@@ -47,7 +47,7 @@ weatherConditions.onload = function() {
       document.getElementById('windspeed').innerHTML = wCond.wind.speed;
       var weatherDesc = "";
       //var i = 0;
-        for (var i=0; i < wCond.weather.length; i++){
+        for (let i=0; i < wCond.weather.length; i++){
           weatherDesc += wCond.weather[i].description;
           if (i != wCond.weather.length-1){
             weatherDesc += ", ";}
@@ -64,7 +64,7 @@ if (weatherForecast.status === 200){
 	console.log(fObj);
   // day 1
   var d1 = new Date();
-  var weekday1 = new Array();
+  var weekday1 = [];  // new array
   weekday1[0] = "Sunday";
   weekday1[1] = "Monday";
   weekday1[2] = "Tuesday";
@@ -79,7 +79,7 @@ if (weatherForecast.status === 200){
 
   // day 2
   var d2 = new Date();
-  var weekday2 = new Array();
+  var weekday2 = [];
   weekday2[0] = "Sunday";
   weekday2[1] = "Monday";
   weekday2[2] = "Tuesday";
@@ -94,7 +94,7 @@ if (weatherForecast.status === 200){
 
   // day 3
   var d3 = new Date();
-  var weekday3 = new Array();
+  var weekday3 = [];
   weekday3[0] = "Sunday";
   weekday3[1] = "Monday";
   weekday3[2] = "Tuesday";
