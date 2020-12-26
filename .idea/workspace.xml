@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1ed9568-2b33-42e1-a8d3-1847b3afb36e" name="Default" comment="content updates">
+    <list default="true" id="b1ed9568-2b33-42e1-a8d3-1847b3afb36e" name="Default" comment="NA strikethru fix">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +111,8 @@
       <workItem from="1602200933264" duration="37000" />
       <workItem from="1602359175752" duration="1435000" />
       <workItem from="1609005921619" duration="388000" />
-      <workItem from="1609006979804" duration="30000" />
+      <workItem from="1609006979804" duration="51000" />
+      <workItem from="1609007096412" duration="103000" />
     </task>
     <task id="LOCAL-00001" summary="nav css fix">
       <created>1542831187176</created>
@@ -363,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602361594570</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="NA strikethru fix">
+      <created>1609007025189</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1609007025189</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,26 +395,7 @@
     <MESSAGE value="add border to large render, add content" />
     <MESSAGE value="small nav tuning, content updates" />
     <MESSAGE value="content updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="content updates" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="39" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602359213747">
-      <screen x="0" y="0" width="1171" height="902" />
-    </state>
-    <state x="39" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1171.902@0.0.1171.902" timestamp="1602359213747" />
-    <state x="236" y="205" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601331165567">
-      <screen x="0" y="0" width="1171" height="902" />
-    </state>
-    <state x="216" y="220" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1073.970@0.0.1073.970" timestamp="1595551830896" />
-    <state x="236" y="205" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1171.902@0.0.1171.902" timestamp="1601331165567" />
-    <state x="191" y="37" key="CommitChangelistDialog2" timestamp="1602361594223">
-      <screen x="0" y="0" width="952" height="902" />
-    </state>
-    <state x="533" y="60" key="CommitChangelistDialog2/0.0.1824.986@0.0.1824.986" timestamp="1595554087226" />
-    <state x="191" y="37" key="CommitChangelistDialog2/0.0.952.902@0.0.952.902" timestamp="1602361594223" />
-    <state x="86" y="82" key="SettingsEditor" timestamp="1602359325609">
-      <screen x="0" y="0" width="1171" height="902" />
-    </state>
-    <state x="86" y="82" key="SettingsEditor/0.0.1171.902@0.0.1171.902" timestamp="1602359325609" />
+    <MESSAGE value="NA strikethru fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="NA strikethru fix" />
   </component>
 </project>
