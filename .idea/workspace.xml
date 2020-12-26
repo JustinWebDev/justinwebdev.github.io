@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1ed9568-2b33-42e1-a8d3-1847b3afb36e" name="Default" comment="content updates">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/wmain.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +109,7 @@
       <workItem from="1602200933264" duration="37000" />
       <workItem from="1602359175752" duration="1435000" />
       <workItem from="1609005921619" duration="388000" />
+      <workItem from="1609006979804" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="nav css fix">
       <created>1542831187176</created>
