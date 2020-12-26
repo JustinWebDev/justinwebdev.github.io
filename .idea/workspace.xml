@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1ed9568-2b33-42e1-a8d3-1847b3afb36e" name="Default" comment="content updates">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/wmain.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,13 +59,15 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\justin\Documents\GitHub\justinwebdev.github.io" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -101,7 +105,12 @@
       <workItem from="1583016374372" duration="111000" />
       <workItem from="1595551448862" duration="99000" />
       <workItem from="1595551623635" duration="340000" />
-      <workItem from="1595552179509" duration="1832000" />
+      <workItem from="1595552179509" duration="1852000" />
+      <workItem from="1601331157223" duration="39000" />
+      <workItem from="1601331247436" duration="727000" />
+      <workItem from="1602200933264" duration="37000" />
+      <workItem from="1602359175752" duration="1435000" />
+      <workItem from="1609005921619" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="nav css fix">
       <created>1542831187176</created>
@@ -341,11 +350,25 @@
       <option name="project" value="LOCAL" />
       <updated>1595553905899</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="content updates">
+      <created>1595554088179</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1595554088179</updated>
+    </task>
+    <task id="LOCAL-00036" summary="content updates">
+      <created>1602361594570</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1602361594570</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nav css fix" />
@@ -366,13 +389,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="content updates" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="216" y="220" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595551830896">
-      <screen x="0" y="0" width="1073" height="970" />
+    <state x="39" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602359213747">
+      <screen x="0" y="0" width="1171" height="902" />
+    </state>
+    <state x="39" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1171.902@0.0.1171.902" timestamp="1602359213747" />
+    <state x="236" y="205" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601331165567">
+      <screen x="0" y="0" width="1171" height="902" />
     </state>
     <state x="216" y="220" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1073.970@0.0.1073.970" timestamp="1595551830896" />
-    <state x="533" y="60" key="CommitChangelistDialog2" timestamp="1595553904212">
-      <screen x="0" y="0" width="1824" height="986" />
+    <state x="236" y="205" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1171.902@0.0.1171.902" timestamp="1601331165567" />
+    <state x="191" y="37" key="CommitChangelistDialog2" timestamp="1602361594223">
+      <screen x="0" y="0" width="952" height="902" />
     </state>
-    <state x="533" y="60" key="CommitChangelistDialog2/0.0.1824.986@0.0.1824.986" timestamp="1595553904212" />
+    <state x="533" y="60" key="CommitChangelistDialog2/0.0.1824.986@0.0.1824.986" timestamp="1595554087226" />
+    <state x="191" y="37" key="CommitChangelistDialog2/0.0.952.902@0.0.952.902" timestamp="1602361594223" />
+    <state x="86" y="82" key="SettingsEditor" timestamp="1602359325609">
+      <screen x="0" y="0" width="1171" height="902" />
+    </state>
+    <state x="86" y="82" key="SettingsEditor/0.0.1171.902@0.0.1171.902" timestamp="1602359325609" />
   </component>
 </project>
