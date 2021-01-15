@@ -65,7 +65,7 @@ if (weatherForecast.status === 200){
   // day 1
   const d1 = new Date();
   const dayWeek = d1.getDay();
-  const weekday1 = new Array();
+  const weekday1 = [];
   weekday1[0] = "Sunday";
   weekday1[1] = "Monday";
   weekday1[2] = "Tuesday";
@@ -74,27 +74,25 @@ if (weatherForecast.status === 200){
   weekday1[5] = "Friday";
   weekday1[6] = "Saturday";
   const day1 = weekday1[dayWeek];
+  let day2, day3;
   document.getElementById('r1c1').innerHTML = day1;
   document.getElementById('r1c3').innerHTML = Math.round(fObj.list[0].main.temp)+"&deg;";
   document.getElementById('r1c2').src = "https://openweathermap.org/img/w/"+fObj.list[0].weather[0].icon+".png";
 
   // day 2
-  //const d2 = new Date();  // don't need this! just use d1, can genericize to weekday instead of 1,2,3?
   if (dayWeek === 6) {
-    const day2 = weekday1[0];
+    day2 = weekday1[0];
   }
-    // <- here is the problem for undefined day!
   document.getElementById('r2c1').innerHTML = day2;
   document.getElementById('r2c3').innerHTML = Math.round(fObj.list[8].main.temp)+"&deg;";
   document.getElementById('r2c2').src = "https://openweathermap.org/img/w/"+fObj.list[8].weather[0].icon+".png";
 
   // day 3
-  //const d3 = new Date();
   if (dayWeek === 5) {
-    const day3 = weekday1[0];
+    day3 = weekday1[0];
   }
   if (dayWeek === 6) {
-    const day3 = weekday1[1];
+    day3 = weekday1[1];
   }
   console.log(day3);
   document.getElementById('r3c1').innerHTML = day3;
