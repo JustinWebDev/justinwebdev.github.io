@@ -40,7 +40,7 @@ weatherConditions.onload = function() {
         let weatherCond = "";
           for (let i=0; i < wCond.weather.length; i++) {
             weatherCond += wCond.weather[i].main;
-            if (i != wCond.weather.length-1){
+            if (i !== wCond.weather.length-1){
               weatherCond += ", ";}
           }
       document.getElementById('weather').innerHTML = weatherCond;
@@ -49,7 +49,7 @@ weatherConditions.onload = function() {
       let weatherDesc = "";
         for (let i=0; i < wCond.weather.length; i++) {
           weatherDesc += wCond.weather[i].description;
-          if (i != wCond.weather.length-1){
+          if (i !== wCond.weather.length-1){
             weatherDesc += ", ";}
         }
       document.getElementById('desc').innerHTML = weatherDesc;
