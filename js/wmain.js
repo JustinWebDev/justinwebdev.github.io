@@ -5,7 +5,9 @@ var weatherConditions = new XMLHttpRequest();
 var weatherForecast = new XMLHttpRequest();
 var wCond; //conditions
 var fObj; //forecast
+
 document.getElementById('zip').value ="";
+
 function loadWeather() {
   var zip = document.getElementById('zip').value;
   if (zip === '') {zip = "35810"}
@@ -17,14 +19,14 @@ function loadWeather() {
   weatherConditions.responseType = 'text';
   weatherConditions.send(null);
 
-  // GET THE FORECARST
+  // GET THE FORECAST
   weatherForecast.open('GET', forecastPath, true);
   weatherForecast.responseType = 'text';
   weatherForecast.send();
 }
 
 weatherConditions.onload = function() {
-    if (weatherConditions.status === 200){
+    if (weatherConditions.status === 200) {
         wCond = JSON.parse(weatherConditions.responseText);
         console.log(wCond);
         document.getElementById('location').innerHTML = wCond.name;
@@ -33,25 +35,23 @@ weatherConditions.onload = function() {
         var iconpath = "https://openweathermap.org/img/w/"+iconcode+".png";
         console.log(iconpath);
         document.getElementById('wcicon').src = iconpath;
-        //document.getElementById('wcicon').innerHTML = "<img src=\"https://openweathermap.org/img/w/"+wCond.weather[0].icon+".png\">";
-// https://openweathermap.org/weather-conditions  <img src="https://openweathermap.org/img/w/10d.png">
+        // document.getElementById('wcicon').innerHTML = "<img src=\"https://openweathermap.org/img/w/"+wCond.weather[0].icon+".png\">";
+        // https://openweathermap.org/weather-conditions  <img src="https://openweathermap.org/img/w/10d.png">
         var weatherCond = "";
-        //var i = 0;
-          for (var i=0; i < wCond.weather.length; i++){
+          for (var i=0; i < wCond.weather.length; i++) {
             weatherCond += wCond.weather[i].main;
             if (i != wCond.weather.length-1){
               weatherCond += ", ";}
-            }
+          }
       document.getElementById('weather').innerHTML = weatherCond;
       document.getElementById('temperature').innerHTML = Math.round(wCond.main.temp);
       document.getElementById('windspeed').innerHTML = wCond.wind.speed;
       var weatherDesc = "";
-      //var i = 0;
-        for (var i=0; i < wCond.weather.length; i++){
+        for (var i=0; i < wCond.weather.length; i++) {
           weatherDesc += wCond.weather[i].description;
           if (i != wCond.weather.length-1){
             weatherDesc += ", ";}
-          }
+        }
       document.getElementById('desc').innerHTML = weatherDesc;
       //document.getElementById('radar').src = 'https://tile.openweathermap.org/map/precipitation_new/4/6/10.png?appid=8c6405207db6b6fe115ac161f770cd31' // for radar div
     } //end if
@@ -78,7 +78,7 @@ if (weatherForecast.status === 200){
   document.getElementById('r1c2').src = "https://openweathermap.org/img/w/"+fObj.list[0].weather[0].icon+".png";
 
   // day 2
-  var d2 = new Date();
+  var d2 = new Date();  // don't need this! just use d1, can genericize to weekday instead of 1,2,3?
   var weekday2 = new Array();
   weekday2[0] = "Sunday";
   weekday2[1] = "Monday";
@@ -87,7 +87,7 @@ if (weatherForecast.status === 200){
   weekday2[4] = "Thursday";
   weekday2[5] = "Friday";
   weekday2[6] = "Saturday";
-  var day2 = weekday2[d2.getDay()+1];
+  var day2 = weekday2[d2.getDay()+1];  // <- here is the problem for undefin ed day!
   document.getElementById('r2c1').innerHTML = day2;
   document.getElementById('r2c3').innerHTML = Math.round(fObj.list[8].main.temp)+"&deg;";
   document.getElementById('r2c2').src = "https://openweathermap.org/img/w/"+fObj.list[8].weather[0].icon+".png";

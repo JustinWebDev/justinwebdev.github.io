@@ -31,7 +31,7 @@
 <body>
 	<div id="wrapper">
 	<header>
-		<figure class="wu" alt="weather logo banner"><img src="images/weatherLogo.png"></figure>
+		<figure class="wu"><img src="images/weatherLogo.png" alt="weather logo banner"></figure>
     <h1>My Weather Channel</h1>
     <h2>JSON data via OpenWeatherMap.org API</h2>
     </header>
@@ -39,7 +39,6 @@
 		<nav>
 			<input type="text" maxlength="5" id="zip" value="">
 			<button onclick="loadWeather()">Check this Zipcode</button>
-
 		</nav>
 
 <!-- page content here -->
@@ -86,12 +85,12 @@
 <div style="clear: both; padding: 10px; text-align: center;"> <!-- widget from OpenWeatherMap site, outer wrapper neeeded for centering -->
 <div id="openweathermap-widget-15" style="display: inline-block; padding: 10px;"></div>
 </div>
-<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 15,cityid: '4068590',appid: '8c6405207db6b6fe115ac161f770cd31',units: 'imperial',containerid: 'openweathermap-widget-15',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s); })();</script>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = []; window.myWidgetParam.push({id: 15,cityid: '4068590',appid: '8c6405207db6b6fe115ac161f770cd31',units: 'imperial',containerid: 'openweathermap-widget-15', }); (function() {let script = document.createElement('script');script.async = true;script.charset = "utf-8"; script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";let s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s); })();</script>
 
 </main><!-- end content -->
 
 <footer>
-  <p>&bull;Paul Cheney &bull;MODIFIED by Justin to add extra functionality and convert to OpenWeatherMap</p>
+  <p>&bull; Justin Hammack &bull;  API+JavaScript and widget</p>
 </footer>
 
 </div> <!-- end wrapper -->
