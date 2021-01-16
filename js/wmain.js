@@ -16,12 +16,13 @@ function loadWeather() {
 
   // GET THE CONDITIONS
   weatherConditions.open('get', conditionsPath, true);
-  weatherConditions.responseType = 'text';
+  //weatherConditions.responseType = '';
   weatherConditions.send(null);
 
   // GET THE FORECAST
+  console.log("TEST for json");
   weatherForecast.open('GET', forecastPath, true);
-  weatherForecast.responseType = 'text';
+  //weatherForecast.responseType = '';
   weatherForecast.send();
 }
 
@@ -45,7 +46,7 @@ weatherConditions.onload = function() {
           }
       document.getElementById('weather').innerHTML = weatherCond;
       document.getElementById('temperature').innerHTML = Math.round(wCond.main.temp);
-      document.getElementById('windspeed').innerHTML = wCond.wind.speed;
+      document.getElementById('windspeed').innerHTML = wCond.wind.speed.toFixed();
       let weatherDesc = "";
         for (let i=0; i < wCond.weather.length; i++) {
           weatherDesc += wCond.weather[i].description;
@@ -78,6 +79,8 @@ if (weatherForecast.status === 200){
   document.getElementById('r1c1').innerHTML = day1;
   document.getElementById('r1c3').innerHTML = Math.round(fObj.list[0].main.temp)+"&deg;";
   document.getElementById('r1c2').src = "https://openweathermap.org/img/w/"+fObj.list[0].weather[0].icon+".png";
+  document.getElementById('r1c2').alt = fObj.list[0].weather[0].description;
+  document.getElementById('r1c2').title = fObj.list[0].weather[0].main;
 
   // day 2
   if (dayWeek === 6) {
@@ -89,6 +92,8 @@ if (weatherForecast.status === 200){
   document.getElementById('r2c1').innerHTML = day2;
   document.getElementById('r2c3').innerHTML = Math.round(fObj.list[8].main.temp)+"&deg;";
   document.getElementById('r2c2').src = "https://openweathermap.org/img/w/"+fObj.list[8].weather[0].icon+".png";
+  document.getElementById('r2c2').alt = fObj.list[8].weather[0].description;
+  document.getElementById('r2c2').title = fObj.list[8].weather[0].main;
 
   // day 3
   if (dayWeek === 5) {
@@ -100,10 +105,11 @@ if (weatherForecast.status === 200){
   else {
     day3 = weekday1[dayWeek+1];
   }
-  console.log(day3);
   document.getElementById('r3c1').innerHTML = day3;
   document.getElementById('r3c3').innerHTML = Math.round(fObj.list[16].main.temp)+"&deg;";
   document.getElementById('r3c2').src = "https://openweathermap.org/img/w/"+fObj.list[16].weather[0].icon+".png";
+  document.getElementById('r3c2').alt = fObj.list[16].weather[0].description;
+  document.getElementById('r3c2').title = fObj.list[16].weather[0].main;
 
  } //end if
 }; //end function
