@@ -83,6 +83,9 @@ if (weatherForecast.status === 200){
   if (dayWeek === 6) {
     day2 = weekday1[0];
   }
+  else {
+    day2 = weekday1[dayWeek+1];
+  }
   document.getElementById('r2c1').innerHTML = day2;
   document.getElementById('r2c3').innerHTML = Math.round(fObj.list[8].main.temp)+"&deg;";
   document.getElementById('r2c2').src = "https://openweathermap.org/img/w/"+fObj.list[8].weather[0].icon+".png";
@@ -91,8 +94,11 @@ if (weatherForecast.status === 200){
   if (dayWeek === 5) {
     day3 = weekday1[0];
   }
-  if (dayWeek === 6) {
+  else if (dayWeek === 6) {
     day3 = weekday1[1];
+  }
+  else {
+    day3 = weekday1[dayWeek+1];
   }
   console.log(day3);
   document.getElementById('r3c1').innerHTML = day3;
