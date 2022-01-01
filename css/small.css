@@ -37,8 +37,8 @@ nav button {
     transition: 1s;
 }
 @keyframes navULshow {
-    from {opacity: .2;}
-    to {opacity: 1;}
+    from {opacity: .2; height: 0; width: 0}
+    to {opacity: 1; height: 100%; width: 100%}
 }
 @keyframes navULhide {
     from {opacity: 1;}
@@ -48,7 +48,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: block;
     animation-name: navULshow;
     animation-duration: 1s;
 }
@@ -79,9 +78,10 @@ nav ul li.active a {                 /* if this were above hover then hover woul
     box-shadow: 0 0 16px 0 #5a5a5a inset;
 }
 
-nav ul.hide {display: none;
+nav ul.hide {
     animation-name: navULhide;
     animation-duration: 1s;
+    display: none;
 }
 nav button.hide {
     box-shadow: 0 0 8px 1px #6f6f6f inset;
