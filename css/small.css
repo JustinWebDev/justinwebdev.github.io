@@ -34,13 +34,18 @@ nav button {
     transform: scale(1.25);
     font-size: 1.6rem;
     color: #555;
+    transition: 1s;
 }
+@keyframes navbutton {
+    from {opacity: .2;}
+    to {opacity: 1;}
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: block;
-    transition: display 1s;
+    animation-name: navbutton;
+    animation-duration: 2s;
 }
 /* nav ul li {
     float: left;
@@ -70,10 +75,10 @@ nav ul li.active a {                 /* if this were above hover then hover woul
 }
 
 nav ul.hide {display: none; }
-button.hide {
+nav button.hide {
     box-shadow: 0 0 8px 1px #6f6f6f inset;
     color: white;
-    transition: 1s;
+    transition: .5s;
 }
 
 /*----------- hamburger menu icon --------------*/
