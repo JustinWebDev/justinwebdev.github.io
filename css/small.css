@@ -67,10 +67,11 @@ nav ul li.active a {                 /* if this were above hover then hover woul
     box-shadow: 0 0 16px 0 #5a5a5a inset;
 }
 
-nav ul.hide {display: none;}
+nav ul.hide {display: none; transition: 1s;}
 button.hide {
     box-shadow: 0 0 8px 1px #6f6f6f inset;
     color: white;
+    transition: 1s;
 }
 
 /*----------- hamburger menu icon --------------*/
