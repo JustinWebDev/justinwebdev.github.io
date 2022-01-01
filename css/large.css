@@ -23,7 +23,7 @@ header {
     nav ul li:first-child a {border-left: 1px solid #777;}
     nav ul li:last-child a {border-right: 1px solid #777;}
     nav ul li a {/*border: 1px solid rgba(0,0,0,0.8);*/
-        background: linear-gradient(to bottom right, #e5e5e5 0%, #5b5b5b 100%);
+        background: linear-gradient(to bottom right, #e5e5e5 0%, #5b5b5b80 100%);
         border-right: 1px solid rgba(0,0,0,.3);
         border-top-right-radius: 8px;
         padding: .6rem 1rem;}
@@ -31,7 +31,7 @@ header {
         box-shadow: 0 0 12px inset;
     }
     nav ul li.active a {
-        background: linear-gradient(to bottom, #5b5b5b 0%, #E2E2E2 100%);
+        background: linear-gradient(to bottom, #5b5b5b4d 0%, #E2E2E2 100%);
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
 
