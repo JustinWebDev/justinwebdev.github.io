@@ -74,7 +74,7 @@ if (weatherForecast.status === 200){
   weekday[4] = "Thursday";
   weekday[5] = "Friday";
   weekday[6] = "Saturday";
-  const day1 = weekday[dayWeek];  console.log(`day2 is ${day1}`);
+  const day1 = weekday[dayWeek];  console.log(`day1 is ${day1}`);
   let day2, day3;
   document.getElementById('r1c1').innerHTML = day1;
   document.getElementById('r1c3').innerHTML = Math.round(fObj.list[0].main.temp)+"&deg;";
@@ -106,7 +106,7 @@ if (weatherForecast.status === 200){
   else {
     day3 = weekday[dayWeek+2];
   }
-  console.log(`day is ${day3}`);
+  console.log(`day3 is ${day3}`);
   document.getElementById('r3c1').innerHTML = day3;
   document.getElementById('r3c3').innerHTML = Math.round(fObj.list[16].main.temp)+"&deg;";
   document.getElementById('r3c2').src = "https://openweathermap.org/img/w/"+fObj.list[16].weather[0].icon+".png";
