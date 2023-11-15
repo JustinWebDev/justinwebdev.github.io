@@ -78,7 +78,7 @@ weatherForecast.onload = function () {
     const day1 = weekday[dayWeek]; console.log(`day1 is ${day1}`);
     let day2, day3;
     document.getElementById('r1c1').innerText = day1;
-    document.getElementById('r1c3').innerText = Math.round(fObj.list[0].main.temp) + "&deg;";
+    document.getElementById('r1c3').innerHTML = Math.round(fObj.list[0].main.temp) + "&deg;";  // innterHTML required to render deg!
     document.getElementById('r1c2').src = "https://openweathermap.org/img/w/" + fObj.list[0].weather[0].icon + ".png";
     document.getElementById('r1c2').alt = fObj.list[0].weather[0].description;
     document.getElementById('r1c2').title = fObj.list[0].weather[0].main;
@@ -91,7 +91,7 @@ weatherForecast.onload = function () {
     }
     console.log(`day2 is ${day2}`);
     document.getElementById('r2c1').innerText = day2;
-    document.getElementById('r2c3').innerText = Math.round(fObj.list[8].main.temp) + "&deg;";
+    document.getElementById('r2c3').innerHTML = Math.round(fObj.list[8].main.temp) + "&deg;";
     document.getElementById('r2c2').src = "https://openweathermap.org/img/w/" + fObj.list[8].weather[0].icon + ".png";
     document.getElementById('r2c2').alt = fObj.list[8].weather[0].description;
     document.getElementById('r2c2').title = fObj.list[8].weather[0].main;
@@ -105,7 +105,7 @@ weatherForecast.onload = function () {
       day3 = weekday[dayWeek + 2];
     }
     console.log(`day3 is ${day3}`);
-    document.getElementById('r3c1').innerHTML = day3;
+    document.getElementById('r3c1').innerText = day3;
     document.getElementById('r3c3').innerHTML = Math.round(fObj.list[16].main.temp) + "&deg;";
     document.getElementById('r3c2').src = "https://openweathermap.org/img/w/" + fObj.list[16].weather[0].icon + ".png";
     document.getElementById('r3c2').alt = fObj.list[16].weather[0].description;
