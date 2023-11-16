@@ -31,7 +31,7 @@ weatherConditions.onload = function () {
     console.log(wCond);
     document.getElementById('location').innerText = wCond.name;
     const iconcode = wCond.weather[0].icon;
-    console.log("GOT icon = " + iconcode);
+    console.log("current cond icon = " + iconcode);
     const iconpath = "https://openweathermap.org/img/w/" + iconcode + ".png";
     console.log(iconpath);
     document.getElementById('wcicon').src = iconpath;
