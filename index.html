@@ -1,42 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="description" content="My GitHub site">
-<meta name="author" content="Justin">
+    <meta charset="utf-8">
+    <meta name="description" content="My GitHub site">
+    <meta name="author" content="Justin">
 
-<title>Justin's GitHub site</title>
+    <title>Justin's GitHub site</title>
 
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<!-- <link href="css/medium.css" rel="stylesheet"> -->
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i" rel="stylesheet" type="text/css">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <!-- <link href="css/medium.css" rel="stylesheet"> -->
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i" rel="stylesheet"
+        type="text/css">
 </head>
 
 <body>
-<!-- HEADER HERE -->
-	<header class="clearfix">
+    <!-- HEADER HERE -->
+    <header class="clearfix">
         <figure class="logo">
-            <img src="images/logo.jpg" alt="logo" srcset=""> <!--"images/logo1.png 1x, images/logo2.png s2" used for 1x or 2x pixel density-->
+            <img src="images/logo.jpg" alt="logo" srcset="">
+            <!--"images/logo1.png 1x, images/logo2.png s2" used for 1x or 2x pixel density-->
         </figure>
- <h1>Justin's GitHub Pages site</h1>
+        <h1>Justin's GitHub Pages site</h1>
         <h2>(if I had a slogan, it would go here)</h2>
     </header>
 
-<!-- NAVIGATION HERE -->
+    <!-- NAVIGATION HERE -->
     <nav class="clearfix">
         <button onclick="toggleMenu()">&equiv;</button>
         <ul id="primaryNav" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
-            <li ><a href="weather.html">Weather app</a></li>
+            <li><a href="weather.html">Weather app</a></li>
             <li><a href="forms.html">Forms</a></li>
             <!--<li><a href="#">Contact</a></li>-->
         </ul>
@@ -48,85 +50,100 @@
         </div>
         -->
     </nav>
-    
-<!-- CONTENT HERE -->
+
+    <!-- CONTENT HERE -->
     <main class="clearfix">
         <aside>
-            <p>This is <a href="https://github.com/justinwebdev">my GitHub</a> site I created mainly to experiment with git.  I've been doing web development for a while,
-            but this gives me a place to experiment with different front-end elements.  Before I got involved with software testing and development, I worked as a mechanical engineer.</p>
-        <p>I composed a site years ago (my first one!) from scratch for my company as a way to collect departmental knowledge,
-        best practices, and product information.  Though I've not developed an entire commercial site, I have been
-        maintaining a couple for several years, adding functionality and other maintenance (client- and server-side):</p>
-        <ul style="list-style-type: circle;">
-            <li><a href="https://berean-biblechurch.org/">Berean Bible Church</a> (WordPress site theme created by a 3rd-party)
-                <ul style="list-style-type: disc;">
-                    <li><a href="https://berean-biblechurch.org/live-stream/">live stream media page</a>:
-                        <ul>
-                            <li>created the page and added content</li>
-                            <li>implemented 3rd-party JavaScript audio player and customized it, created a JS reset button for it</li>
-                            <li>added custom JavaScript to track stream status and present messages</li>
-                            <li>implemented stream status indicator using custom PHP and JavaScript (having to work around host limitations)</li>
-                        </ul>
-                    </li>
-                    <li>designed and configured the live audio stream system (DNS, TLS, streaming server, encoder, customized audio player)</li>
-                    <li>created a PHP web app for maintaining the RSS feed</li>
-                    <li>various updates and enhancements across all of the site</li>
-                </ul>
-            </li>
-            <li>Nature's Apothecary site (local business)
-                <ul style="list-style-type: disc;">
-                    <li><span style="text-decoration: line-through;">implemented contact form with a PHP captcha (NOT Google's <i>terrible</i> reCAPTCHA)</span>
-                        <ul>
-                            <li>recently implemented custom JavaScript to prevent spam, eliminating need for captcha</li>
-                        </ul>
-                    </li>
-                    <li>replaced obsoleted canned e-mail script with custom script</li>
-                    <li>various updates on the site and the server</li>
-                </ul>
-            </li>
-        </ul>
-	<p style="margin-bottom: -10px;"> I wouldn't claim to be an expert, but good in most of these things:</p>
-        <ul>
-            <li>HTML+CSS</li>
-            <li>PHP+MySQL, Laravel, WordPress</li>
-            <li>JavaScript, PowerShell </li>
-            <li>Windows, Linux</li>
-            <li>networking, web technologies, virtual machines</li>
-            <li>software testing for over 19 years</li>
-        </ul>
-        <p>...still a work in progress...</p>
-	</aside>
+            <p>This is <a href="https://github.com/justinwebdev">my GitHub</a> site I created mainly to experiment with
+                git. I've been doing web development for a while,
+                but this gives me a place to experiment with different front-end elements. Before I got involved with
+                software testing and development, I worked as a mechanical engineer.</p>
+            <p>I composed a site years ago (my first one!) from scratch for my company as a way to collect departmental
+                knowledge,
+                best practices, and product information. Though I've not developed an entire commercial site, I have
+                been
+                maintaining a couple for several years, adding functionality and other maintenance (client- and
+                server-side):</p>
+            <ul style="list-style-type: circle;">
+                <li><a href="https://berean-biblechurch.org/">Berean Bible Church</a> (WordPress site theme created by a
+                    3rd-party)
+                    <ul style="list-style-type: disc;">
+                        <li><a href="https://berean-biblechurch.org/live-stream/">live stream media page</a>:
+                            <ul>
+                                <li>created the page and added content</li>
+                                <li>implemented 3rd-party JavaScript audio player and customized it, created a JS reset
+                                    button for it</li>
+                                <li>added custom JavaScript to track stream status and present messages</li>
+                                <li>implemented stream status indicator using custom PHP and JavaScript (having to work
+                                    around host limitations)</li>
+                            </ul>
+                        </li>
+                        <li>designed and configured the live audio stream system (DNS, TLS, streaming server, encoder,
+                            customized audio player)</li>
+                        <li>created a PHP web app for maintaining the RSS feed</li>
+                        <li>various updates and enhancements across all of the site</li>
+                    </ul>
+                </li>
+                <li>Nature's Apothecary site (local business)
+                    <ul style="list-style-type: disc;">
+                        <li><span style="text-decoration: line-through;">implemented contact form with a PHP captcha
+                                (NOT Google's <i>terrible</i> reCAPTCHA)</span>
+                            <ul>
+                                <li>recently implemented custom JavaScript to prevent spam, eliminating need for captcha
+                                </li>
+                            </ul>
+                        </li>
+                        <li>replaced obsoleted canned e-mail script with custom script</li>
+                        <li>various updates on the site and the server</li>
+                    </ul>
+                </li>
+            </ul>
+            <p style="margin-bottom: -10px;"> I wouldn't claim to be an expert, but good in most of these things:</p>
+            <ul>
+                <li>HTML+CSS</li>
+                <li>PHP+MySQL, Laravel, WordPress</li>
+                <li>JavaScript, PowerShell </li>
+                <li>Windows, Linux</li>
+                <li>networking, web technologies, virtual machines</li>
+                <li>software testing for over 19 years</li>
+            </ul>
+            <p>...still a work in progress...</p>
+        </aside>
         <h1>Products</h1>
         <figure class="myphoto">
-        <img src="images/img1.jpg" alt="image thingy" sizes="50vw"
-             srcset="images/img2.jpg 200w,
+            <img src="images/img1.jpg" alt="image thingy" sizes="50vw" srcset="images/img2.jpg 200w,
               images/img5.jpg 500w,
                images/img8.jpg 800w,
                 images/img11.jpg 1100w"><!--  img changes based on width of 50% of screen-->
             <figcaption> max img size </figcaption>
         </figure>
-        <p>Lorem ipsum dolor sit amet, ne graeco utroque conceptam nec, primis voluptatibus id his, latine dolorum no eos. Vim cu nominavi quaerendum complectitur, dico choro eu eum, vel iracundia hendrerit ut. Vim atqui dissentiunt te, at vidit sententiae duo. Eu est noluisse vituperata temporibus. An nec velit aeterno, ei vix fugit semper atomorum. Ad sea semper fierent.
+        <p>Lorem ipsum dolor sit amet, ne graeco utroque conceptam nec, primis voluptatibus id his, latine dolorum no
+            eos. Vim cu nominavi quaerendum complectitur, dico choro eu eum, vel iracundia hendrerit ut. Vim atqui
+            dissentiunt te, at vidit sententiae duo. Eu est noluisse vituperata temporibus. An nec velit aeterno, ei vix
+            fugit semper atomorum. Ad sea semper fierent.
 
-        No cibo oporteat pri, per ea sensibus rationibus. Meis luptatum mandamus te vel. Has at probo albucius. Dictas impedit ex has, sanctus molestie in sit.
+            No cibo oporteat pri, per ea sensibus rationibus. Meis luptatum mandamus te vel. Has at probo albucius.
+            Dictas impedit ex has, sanctus molestie in sit.
 
-        Cu vis quaeque recteque. Ceteros explicari nec et, ad sea iracundia expetendis appellantur, augue audiam epicuri ut sea. Ut sea meis scripta disputationi, et toll</p>
+            Cu vis quaeque recteque. Ceteros explicari nec et, ad sea iracundia expetendis appellantur, augue audiam
+            epicuri ut sea. Ut sea meis scripta disputationi, et toll</p>
         <br>
         <br>
-<a href="/css/JHammack_resume.pdf">.</a>
+        <a href="/css/JHammack_resume.pdf">.</a>
     </main>
-    
-<!-- FOOTER HERE -->   
+
+    <!-- FOOTER HERE -->
     <footer>
         &copy; 2022 &bull; Justin Hammack
     </footer>
 
-<script src="js/scripts.js"></script>
-<!-- animated hamburger icon -->
-<script>
-    function myFunction(x) {
-        x.classList.toggle("change");
-    }
-</script>
+    <script src="js/scripts.js"></script>
+    <!-- animated hamburger icon -->
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
 
 </body>
 </html>
